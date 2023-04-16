@@ -1,4 +1,27 @@
-html {
-  height: 100%;
-  width: 100%;
+/*.top h2 {
+  color: blue;
+}
+*/
+
+#rhino, #zebra {
+  color: blue;
+}
+
+/*.middle h2 + h2 {
+  color: gold;
+}
+*/
+
+#bestHouse {
+  color: gold;
+}
+
+/* Please select Duck with the highest level of specificity possible*/
+html > body > h1#hi + section.top + section.middle + article.areDucksDinosaurs > h2.likesToQuack.fight1Or100 {
+  color: lime !important;
+}
+
+/*Please select Rhino with the highest level of specificity possible*/
+html > body > h1#hi + section.top + h2.africa.fourlegs {
+  color: purple;
 }
